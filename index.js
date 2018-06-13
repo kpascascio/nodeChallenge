@@ -3,9 +3,8 @@ const app = express();
 const Sequelize = require('sequelize');
 const bodyParser = require('body-parser')
 
-
 app.use(bodyParser.json())
-const sequelize = new Sequelize('nodeChallenge', 'postgres', 'k12323', {
+const sequelize = new Sequelize('nodeChallenge', 'postgres', 'your password here', {
     dialect: 'postgres'
 })
 
